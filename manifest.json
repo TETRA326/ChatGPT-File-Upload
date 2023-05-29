@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "ChatGPT File Upload",
+  "version": "1.0",
+  "description": "Adds a button to upload files into ChatGPT. (NOT for images, videos, Word Documents, or other non-raw-text files. Please use .txt, .js, .py, .html, .css, .json, and .csv.",
+  "permissions": [
+    "activeTab",
+    "https://chat.openai.com/*"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icon128.png",
+      "256": "icon128.png"
+    }
+  },
+  "icons": {
+    "128": "icon128.png",
+    "256": "icon256.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chat.openai.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
