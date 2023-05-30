@@ -5,10 +5,18 @@ This adds an "Upload File" button to https://chat.openai.com. It will take raw-t
 
 # Install
 You can add this directly from the Firefox Add-on store:
+
 https://addons.mozilla.org/addon/chatgpt-file-upload/
 
+Or add the file yourself (not for the average user):
 
-### If you want to add the Add-on yourself by file:
+## Option A. Download the Latest Release:
+- https://github.com/TETRA326/ChatGPT-File-Upload/releases
+- In Firefox (or any other Gecko-based browser), go to [about:debugging](about:debugging)
+- Click `This Firefox`
+- Click `Load temporary add-on` and select your .zip
+
+## Option B. Compile the Files Yourself
 - Download these 6 files from this repo:
 ```
 - manifest.json
